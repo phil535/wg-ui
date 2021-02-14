@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   app:
-    image: embarkstudios/wireguard-ui:latest
+    image: embarkstudios/wireguard-ui:userspace
     entrypoint: "/wireguard-ui"
     privileged: true
     network_mode: "host"
@@ -26,5 +26,4 @@ services:
       #- WIREGUARD_UI_WG_KEEPALIVE=20
 
       #- WIREGUARD_UI_DEV_UI_SERVER=dev-server-endpoint
-
     restart: always
